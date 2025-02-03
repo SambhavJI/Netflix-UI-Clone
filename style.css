@@ -1,0 +1,509 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.bg {
+    background: url('bg.jpg') no-repeat center center/cover;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.login button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+.text1 {
+    max-width: 80vw;
+}
+
+.text2 {
+    max-width: 80vw;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.a2 {
+    font-size: 30px;
+}
+
+.email {
+    margin-top: 20px;
+}
+
+.email input {
+    padding: 12px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.email button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.email button:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: black;
+    padding: 50px 10%;
+    color: white;
+    border-top: 8px solid red;
+    border-radius: 20px;
+    box-shadow: 0px -5px 15px rgba(255, 0, 0, 0.6),
+        -5px 0px 15px rgba(255, 0, 0, 0.4),
+        5px 0px 15px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.first:hover {
+    transform: scale(1.03);
+    box-shadow: 0px -10px 20px rgba(255, 0, 0, 0.8),
+        -10px 0px 20px rgba(255, 0, 0, 0.6),
+        10px 0px 20px rgba(255, 0, 0, 0.6);
+}
+
+.first .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.first .text1 {
+    max-width: 600px;
+}
+
+p {
+    font-size: 130%;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.first .image {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+}
+
+.first .image img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.first .image video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.img1 {
+    width: auto;
+    max-width: 90%;
+}
+
+.first:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
+}
+
+.faqs {
+    width: 80%; /* Center the FAQ section */
+    margin: 0 auto; /* Center the FAQ section horizontally */
+    padding: 30px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid red;
+    border-radius: 20px;
+    box-shadow: 0px -5px 15px rgba(255, 0, 0, 0.6),
+        -5px 0px 15px rgba(255, 0, 0, 0.4),
+        5px 0px 15px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.faq-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;  /* Ensures all buttons take full width of the container */
+}
+
+.faq-buttons .a1 {
+    width: 100%; /* Ensure all buttons are of equal width */
+    max-width: 500px; /* Max width to avoid oversized buttons */
+    margin: 0;  /* Remove any margin between buttons */
+    background-color: #2d2d2d;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 24px;
+    cursor: pointer;
+    border: none; /* Remove borders if needed */
+}
+
+.faq-buttons .a1:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer {
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px;
+    border-top: 8px solid red;
+    border-radius: 20px;
+    box-shadow: 0px -5px 15px rgba(255, 0, 0, 0.6),
+        -5px 0px 15px rgba(255, 0, 0, 0.4),
+        5px 0px 15px rgba(255, 0, 0, 0.4);
+}
+
+.footer-ques {
+    padding: 34px;
+    padding-left: 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.faqs a,
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.faqs a:hover,
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+.message {
+    width: 80%;
+    height: 5vw;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 0.35rem solid;
+    padding: 3vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@media (max-width: 768px) {
+    .message {
+        width: 90%;
+        height: 8vw;
+        font-size: 1.2rem;
+        padding: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        width: 95%;
+        height: 10vw;
+        font-size: 1rem;
+        padding: 5vw;
+    }
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+.message.radial {
+    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+    animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .first {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .first .content {
+        flex-direction: column;
+    }
+
+    .first .image img,
+    .first .image video {
+        width: 100%;
+    }
+
+    .email input {
+        width: 80%;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+}
+
+.login button,
+.faq-buttons .a1 {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 10px;
+    width: auto; 
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.login button:hover,
+.faq-buttons .a1:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .login button,
+    .faq-buttons .a1 {
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 90%; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .login button,
+    .faq-buttons .a1 {
+        font-size: 12px;
+        padding: 8px 12px;
+        width: 100%;  
+        margin: 8px 0;
+    }
+}
+
+.faqs {
+    width: 80%; /* Center the FAQ section */
+    margin: 0 auto; /* Center the FAQ section horizontally */
+    padding: 30px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid red;
+    border-radius: 20px;
+    box-shadow: 0px -5px 15px rgba(255, 0, 0, 0.6),
+        -5px 0px 15px rgba(255, 0, 0, 0.4),
+        5px 0px 15px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.faq-buttons .a1 {
+    width: 100%; /* Ensure all buttons are of equal width */
+    max-width: 500px; /* Max width to avoid oversized buttons */
+    margin: 0; /* Remove any margin between buttons */
+    background-color: #2d2d2d;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 24px;
+    cursor: pointer;
+    border: none; /* Remove borders if needed */
+}
+
+.faq-buttons .a1:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .faqs {
+        padding: 20px 5%;
+    }
+
+    .faq-buttons .a1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faqs {
+        padding: 20px 3%;
+    }
+
+    .faq-buttons .a1 {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
